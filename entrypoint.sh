@@ -44,9 +44,8 @@ then
   -H "x-goog-api-version: 2" \
   -X POST \
   -v https://www.googleapis.com/chromewebstore/v1.1/items/$5/publish \
-  -d publishTarget=default \
   | \
-  jq -r '.publishState'`
+  jq -r '.status'`
 
   if [ $publish == 'FAILURE' ]
   then
