@@ -42,6 +42,7 @@ then
   --fail \
   -H "Authorization: Bearer $token" \
   -H "x-goog-api-version: 2" \
+  -d "" \
   -X POST \
   -v https://www.googleapis.com/chromewebstore/v1.1/items/$5/publish \
   | \
